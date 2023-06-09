@@ -11,6 +11,7 @@ import type { RootState } from '@/globalRedux/store'
 import { useSelector, useDispatch } from 'react-redux'
 import { storeCoordinates } from '@/globalRedux/features/coordinates/coordinatesSlice'
 import { weatherData } from '@/globalRedux/features/weatherDataSlice'
+import Link from 'next/link'
 
 export default function Home () {
   const [location, setLocation] = useState<string>('')
@@ -36,7 +37,7 @@ export default function Home () {
     }
     try {
       setLoading(true)
-     
+
       const exists: any = coordinates.find(
         (item: any) => item?.name?.toLowerCase() === location.toLowerCase()
       )
@@ -77,7 +78,7 @@ export default function Home () {
       setError(true)
     }
   }
-
+  const handleButtonClick = (event: React.MouseEvent<HTMLElement>) => {}
   const formatedData = formatData(data)
 
   return (
@@ -102,6 +103,14 @@ export default function Home () {
           <div className='h-4/6'>
             <WeatherDetailsCard />
             <SunsetCard />
+            <div className='mt-5 w-full' >
+            <Link
+              href='/about'
+              className='mx-2  bg-card-yellow  text-white transition duration-150 ease-in-out rounded w-full px-8 py-3 text-sm'
+            >
+              About 
+            </Link>
+            </div>
           </div>
         )}
       </section>

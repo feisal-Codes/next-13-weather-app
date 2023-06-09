@@ -27,9 +27,9 @@ const SearchInput: React.FC<Props> = ({ handleClick, ...props }) => {
         placeholder='search city or city,country'
         {...props}
       />
-      <button onClick={handleClick} className=' text-blue-500    ml-4'>
+      <button onClick={handleClick} className=' text-blue-500 p-2    ml-4'>
         <span>
-          <FaSearchLocation size={16} />
+          <FaSearchLocation size={25} />
         </span>
       </button>
     </div>
