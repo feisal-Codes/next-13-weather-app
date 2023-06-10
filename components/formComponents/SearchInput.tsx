@@ -29,7 +29,7 @@ const SearchInput: React.FC<Props> = ({ handleClick, ...props }) => {
       />
       <button onClick={handleClick} className=' text-blue-500 p-2    ml-4'>
         <span>
-          <FaSearchLocation size={25} />
+          <FaSearchLocation size={20} />
         </span>
       </button>
     </div>
