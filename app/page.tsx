@@ -103,7 +103,7 @@ export default function Home () {
           <div className='h-4/6'>
             <WeatherDetailsCard />
             <SunsetCard />
-            <div className='mt-5 w-full' >
+            <div className='mt-3 xs:ml-3 w-full' >
             <Link
               href='/about'
               className='mx-2  bg-card-yellow  text-white transition duration-150 ease-in-out rounded w-full px-8 py-3 text-sm'

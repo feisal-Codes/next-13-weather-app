@@ -24,7 +24,7 @@ console.log(data)
     <div 
       className='max-w-xs w-72 mx-auto bg-gradient-to-b  from-card-blue-light to-card-blue border
      border-card-blue rounded-xl shadow
-     h-3/4 pb-4 mt-10'
+     h-3/4 pb-4 mt-8'
     >
       <div  className='text-white  flex font-bold  items-center pt-4 pl-4 '>
         <GoLocation />
