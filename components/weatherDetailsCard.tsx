@@ -19,7 +19,6 @@ function WeatherDetailsCard () {
     (state: RootState) => state?.weatherData?.data
   )
 
-console.log(data)
   return (
     <div 
       className='max-w-xs w-72 mx-auto bg-gradient-to-b  from-card-blue-light to-card-blue border

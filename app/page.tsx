@@ -78,7 +78,6 @@ export default function Home () {
       setError(true)
     }
   }
-  const handleButtonClick = (event: React.MouseEvent<HTMLElement>) => {}
   const formatedData = formatData(data)
 
   return (
@@ -106,7 +105,7 @@ export default function Home () {
             <div className='mt-3 xs:ml-3 w-full' >
             <Link
               href='/about'
-              className='mx-2  bg-card-yellow  text-white transition duration-150 ease-in-out rounded w-full px-8 py-3 text-sm'
+              className='mx-2  bg-card-yellow  text-white transition duration-150 ease-in-out rounded w-full px-8 py-2 text-sm'
             >
               About 
             </Link>
